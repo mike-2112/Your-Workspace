@@ -1,0 +1,29 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://187.124.225.179:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 339-930-283
+127.0.0.1 - - [19/Mar/2026 00:11:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Mar/2026 00:11:58] "[33mGET /kanban HTTP/1.0[0m" 404 -
+127.0.0.1 - - [19/Mar/2026 00:31:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Mar/2026 05:35:22] "[33mGET /kanban HTTP/1.0[0m" 404 -
+127.0.0.1 - - [19/Mar/2026 11:53:08] "[33mGET /kanban HTTP/1.0[0m" 404 -
+127.0.0.1 - - [19/Mar/2026 11:58:14] "[33mGET /kanban HTTP/1.0[0m" 404 -
+127.0.0.1 - - [19/Mar/2026 12:08:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Mar/2026 12:13:48] "[33mGET /kanban HTTP/1.0[0m" 404 -
+127.0.0.1 - - [19/Mar/2026 12:15:47] "[33mGET /kanban HTTP/1.0[0m" 404 -
+127.0.0.1 - - [19/Mar/2026 12:16:56] "[33mGET /kanban HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Mar/2026 12:18:08] "GET / HTTP/1.0" 200 -
+127.0.0.1 - - [19/Mar/2026 12:30:35] "GET / HTTP/1.0" 200 -
+127.0.0.1 - - [19/Mar/2026 12:34:49] "GET / HTTP/1.0" 200 -
+127.0.0.1 - - [19/Mar/2026 12:43:37] "GET / HTTP/1.0" 200 -
+127.0.0.1 - - [19/Mar/2026 15:28:06] "GET / HTTP/1.0" 200 -
+127.0.0.1 - - [19/Mar/2026 18:18:42] "GET / HTTP/1.0" 200 -
+127.0.0.1 - - [19/Mar/2026 21:25:02] "GET / HTTP/1.0" 200 -
+127.0.0.1 - - [19/Mar/2026 23:21:59] "GET / HTTP/1.0" 200 -
+127.0.0.1 - - [20/Mar/2026 00:04:52] "GET / HTTP/1.0" 200 -

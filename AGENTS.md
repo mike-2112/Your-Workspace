@@ -207,6 +207,26 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
+## Coding Delegation Strategy (Grok 4.20 Sub-Agent)
+
+### Model Philosophy
+- Everyday tasks, chat, heartbeats, summaries, quick lookups: Stay on Grok 4.1 Fast (main agent).
+- ANY coding, scripting, debugging, refactoring, architecture, algorithm, testing, or multi-step logic: Delegate immediately to the @coder sub-agent on Grok 4.20.
+
+### Mandatory Delegation Rules
+1. Detect coding tasks (keywords: "write code", "script", "debug", "fix bug", "refactor", "function", "algorithm", "test code", "parse JSON", etc.).
+2. If @coder exists (it does now): Delegate with `@coder [full task details]` or use sessions_spawn / sessions_send.
+3. Sub-agent prompt it receives: "You are a dedicated coding specialist on Grok 4.20 Reasoning. Plan step-by-step, write code, use code_execution to test/fix until it runs perfectly, return clean code + explanation."
+4. After result: Verify (run the code yourself if possible), incorporate, and log outcome to today’s memory file.
+5. Never attempt complex code on the fast model yourself — always delegate.
+
+If delegation ever fails: Say “Coding sub-agent needs attention — run: openclaw agents list” and ask the user.
+
+Enforce this strictly — it keeps daily use cheap/fast while making coding actually reliable.
+
+## Daily Tweet Skill
+For any request involving "tweet generator", "daily X posts", or the 5 topics (Astrophysics, muscle cars, scifi/fantasy, AI, heavy metal): Use the daily-x-tweet-generator skill immediately.
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.

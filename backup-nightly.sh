@@ -3,7 +3,7 @@ set -euo pipefail
 
 cd /root/.openclaw/workspace
 
-echo "🔄 Nightly GitHub backup starting... $(date -u +%Y-%m-%dT%H:%M:%SZ UTC)"
+echo "🔄 Nightly GitHub backup starting... $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
 # Init repo if needed
 if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
@@ -39,7 +39,7 @@ git add $FILES 2>/dev/null || true
 if git diff --cached --quiet; then
   echo "✅ Nightly backup: No changes in tracked files."
 else
-  COMMIT_MSG="Nightly backup $(date -u +%Y-%m-%dT%H:%M:%SZ UTC) - Automated commit of workspace changes (Heartbeat.md, Brain/, Skills/, Projects/, Memory/, core files)"
+  COMMIT_MSG="Nightly backup $(date -u +%Y-%m-%dT%H:%M:%SZ) - Automated commit of workspace changes (Heartbeat.md, Brain/, Skills/, Projects/, Memory/, core files)"
   git commit -m "$COMMIT_MSG"
   if git push origin main; then
     echo "✅ Nightly backup successful: Committed and pushed to mike-2112/Your-Workspace."
